@@ -1,0 +1,158 @@
+.blog {
+    padding: 56px 0;
+    .blog-title {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        padding-bottom: 44px;
+        h2 {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 65px;
+            color: #575757;
+        }
+    }
+    .search_custom {
+        position: relative;
+        input[type='text'] {
+            border-color: transparent transparent #dddd transparent;
+            border-radius: 0;
+        }
+        .search-btn {
+            position: absolute;
+            right: 0;
+        }
+    }
+    .blog-items {
+        .blog-item {
+            padding: 1em;
+            border-radius: 4px;
+            margin-bottom: 30px!important;
+            border: 1px solid #aaa;
+            .card-body {
+                span {
+                    display: block;
+                    margin: 10px 0 10px 0!important;
+                    font-weight: 700;
+                    i {
+                        font-weight: 900;
+                        padding-right: 10px;
+                    }
+                }
+                h4 {
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 25px;
+                    margin-bottom: 15px!important;
+                }
+                p {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #575757;
+                    display: inline;
+                }
+                a {
+                    font-weight: 600;
+                    color: #043382;
+                    &:hover {
+                        color: #00AEEF !important;
+                    }
+                }
+            }
+        }
+        .c_pagination {
+            display: block;
+            margin: 0 auto;
+            .pagination {
+                border-radius: 0!important;
+                justify-content: center;
+                .page-item {
+                    &.active {
+                        .page-link {
+                            background-color: #fff;
+                            color: #000;
+                            border: 1px solid #000;
+                            border-radius: 0;
+                        }
+                    }
+                    .page-link {
+                        border-radius: 0;
+                        margin: 0 2px!important;
+                        background-color: #000;
+                        color: #fff;
+                        border: 1px solid #000;
+                    }
+                }
+            }
+        }
+    }
+}
+.singleBlog {
+    padding: 56px 0;
+    .blog-title {
+        padding-bottom: 44px;
+        h2 {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 65px;
+            color: #000;
+        }
+    }
+    .blog-item {
+        .blog-features {
+            list-style: none;
+            margin-bottom: 15px!important;
+            .feature-title {
+                font-weight: 700;
+                font-size: 22px;
+                line-height: 33px;
+                color: #575757;
+            }
+            .feature-item {
+                border-bottom: 1px solid #ddd;
+                padding-top: 10px;
+                line-height: 27px;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+        .blog_content {
+            padding-bottom: 30px;
+            text-align: justify;
+            letter-spacing: 0.02em;
+            color: #655F5F;
+            p {
+                margin-bottom: 15px!important;
+            }
+        }
+    }
+}
+.c_pagination {
+    display: block;
+    margin: 0 auto;
+    .pagination {
+        border-radius: 0!important;
+        justify-content: center;
+        .page-item {
+            &.active {
+                .page-link {
+                    background-color: #fff;
+                    color: #000;
+                    border: 1px solid #000;
+                    border-radius: 0;
+                }
+            }
+            .page-link {
+                border-radius: 0;
+                margin: 0 2px!important;
+                background-color: #000;
+                color: #fff;
+                border: 1px solid #000;
+            }
+        }
+    }
+}

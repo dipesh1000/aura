@@ -1,0 +1,59 @@
+
+// owl dots customization
+.owl-carousel{
+    @include position(relative);
+
+    .owl-dots{
+        @include position(absolute, null, null, 40px, 50%);
+        transform: translateX(-50%);
+
+        .owl-dot{
+            span{
+                width: 13px;
+                height: 13px;
+                @include bgColor($clr-white);
+                @include marginX(3.5px!important);
+
+                &:hover{
+                    @include bgColor(white(0.8));
+                }
+            }
+
+            &.active{
+                span{
+                    @include bgColor($clr-orange);
+                }
+            }
+        }
+    }
+}
+
+.feat-offers-slides{
+    position: relative;
+}
+
+// owl navs customization
+.owl-nav{
+    .owl-prev, .owl-next{
+        transform: translateY(-50%);
+
+        img{
+            width: 20px;
+            opacity: 0.5;
+            @include def_transition;
+        }
+
+        &:hover{
+            @include bgTrans;
+            img{
+                opacity: 1;
+            }
+        }
+    }
+    .owl-prev{
+        @include position(absolute, 50%, null, null, 0, 10);
+    }
+    .owl-next{
+        @include position(absolute, 50%, 0, null, null, 10);
+    }
+}

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Aura</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- stylesheets -->
+        <!-- boostrap 5.2 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <!-- line icons -->
+        <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+        <!-- owl carousel -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- custom css -->
+        <link rel="stylesheet" href="sass/main.css">
+    </head>
+    <body>
+        <div class = "pg-index">
+            <div class = "pg-wrapper h-100">
+                <nav class = "tp-navbar px-3">
+                    <div class = "container">
+                        <div class = "tp-navbar-wrapper d-lg-flex justify-content-lg-between align-items-lg-center justify-content-xl-end">
+                            <!-- brand and toggler -->
+                            <div class = "tp-nav-blk-1 d-flex justify-content-between me-auto">
+                                <a href = "index.html" class = "navbar-brand d-flex align-items-center">
+                                    <img src = "assets/images/site-logo.svg" alt = "aura site logo">
+                                </a>
+                                <button type = "button" class = "btn-icon fs-24 d-lg-none" id = "tp-sidebar-show-btn">
+                                    <i class="lni lni-menu"></i>
+                                </button>
+                            </div>
+                            <!-- end of brand and toggler -->
+                            <div class = "tp-nav-blk-2 d-flex align-items-center justify-content-between">
+                                <div class = "tp-cat-dropdown dropdown">
+                                    <button class = "btn dropdown-toggle text-uppercase text-gray34 fw-5" type = "button" data-bs-toggle = "dropdown" aria-expanded="false">
+                                        <span class = "tp-cat-btn-txt d-none d-sm-inline-block me-2">all categories</span>
+                                        <span class = "tp-cat-btn-icon d-sm-none">
+                                            <i class="lni lni-grid-alt"></i>
+                                        </span>
+                                    </button>
+
+                                    <ul class = "dropdown-menu">
+                                        <li><a class = "dropdown-item" href = "#">Clothing</a></li>
+                                        <li><a class = "dropdown-item" href = "#">Accessories</a></li>
+                                        <li><a class = "dropdown-item" href = "#">Books & Learning</a></li>
+                                        <li><a class = "dropdown-item" href = "#">Apparels & Accessories</a></li>
+                                        <li><a class = "dropdown-item" href="">Mobile Phones & Accessories</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class = "tp-nav-search">
+                                    <form>
+                                        <div class = "input-group">
+                                            <input type = "text" class = "form-control bg-transparent border-0" placeholder="Search">
+                                            <span class = "input-group-text bg-transparent border-0">
+                                                <img src = "assets/images/misc-icons/search-icon.svg" alt = "">
+                                            </span>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class = "tp-nav-blk-3 w-100">
+                                <button type = "button" class = "btn-icon d-lg-none" id = "tp-sidebar-hide-btn">
+                                    <i class="lni lni-close"></i>
+                                </button>
+                                <div class = "tp-navbar-nav">
+                                    <ul class = "tp-nav-list d-lg-flex align-items-lg-center justify-content-lg-end">
+                                        <li class = "tp-nav-itm">
+                                            <a href = "index.html" class = "tp-nav-link text-capitalize text-gray34 fw-5 font-inter">home</a>
+                                        </li>
+                                        <li class = "tp-nav-itm">
+                                            <a href = "about.html" class = "tp-nav-link text-capitalize text-gray34 fw-5 font-inter">about us</a>
+                                        </li>
+                                        <li class = "tp-nav-itm">
+                                            <a href = "blog.html" class = "tp-nav-link text-capitalize text-gray34 fw-5 font-inter">our blog</a>
+                                        </li>
+                                        <li class = "tp-nav-itm">
+                                            <a href = "contact.html" class = "tp-nav-link text-capitalize text-gray34 fw-5 font-inter">contact us</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <header class = "hdr" id = "hdr">
+                    <!-- header hero slider -->
+                    <div class = "hdr-cnt hdr-slides owl-carousel owl-theme" id = "hdr-slides">
+                        <div class = "hdr-itm hdr-itm-1 text-center text-lg-start py-6">
+                            <div class = "container">
+                                <div class = "row hdr-itm-cnt text-white align-items-lg-center">
+                                    <div class = "hdr-itm-l col-lg-6">
+                                        <div class = "hdr-itm-l-cnt">
+                                            <p class = "hero-txt fw-5">Affordable Home Applicances</p>
+                                            <h1 class = "hero-h fw-7">A warm winter with Aura Kettle</h1>
+                                            <a href = "#" class = "btn hero-btn text-uppercase btn-primary">explore</a>
+                                        </div>
+                                    </div>
+                                    <div class = "hdr-itm-r mt-5 col-lg-6 mt-lg-0">
+                                        <div class = "hero-img d-flex align-items-center justify-content-center justify-content-xxl-end">
+                                            <img src = "assets/images/pg-index/hero-product-img-1.png" alt = "product image">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class = "hdr-itm hdr-itm-2 text-center text-lg-start py-6">
+                            <div class = "container">
+                                <div class = "row hdr-itm-cnt text-white align-items-lg-center">
+                                    <div class = "hdr-itm-l col-lg-6">
+                                        <div class = "hdr-itm-l-cnt">
+                                            <p class = "hero-txt fw-5">Affordable Home Applicances</p>
+                                            <h1 class = "hero-h fw-7">Best quality Aura Rice Cooker</h1>
+                                            <a href = "#" class = "btn hero-btn text-uppercase btn-secondary">explore</a>
+                                        </div>
+                                    </div>
+                                    <div class = "hdr-itm-r mt-5 col-lg-6 mt-lg-0">
+                                        <div class = "hero-img d-flex align-items-center justify-content-center justify-content-xxl-end">
+                                            <img src = "assets/images/pg-index/hero-product-img-2.png" alt = "product image">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of header hero slider -->
+                </header>
+
+                <main>
+                    <div class="singleBlog">
+                        <div class="container">
+                            <div class="blog-title">
+                                <h2>Keeps alive the freshness of food</h2>
+                            </div>
+                            <div class="blog-item">
+                                <div class="row">
+                                    <div class="col-lg-6 col-sm-12">
+                                        <img src="assets/images/pg-blog/blogimage.png" alt="">
+                                        <div><span><i class="lni lni-timer"></i>June 20, 2022</span></div>
+                                        <ul class="blog-features"> 
+                                            <li class="feature-title">Smart Feature</li>
+                                            <li class="feature-item">
+                                                <span>Freezer</span>
+                                                <span>Capcity</span>
+                                            </li>
+                                            <li class="feature-item">
+                                                <span>Freezer</span>
+                                                <span>Capcity</span>
+                                            </li>
+                                            <li class="feature-item">
+                                                <span>Freezer</span>
+                                                <span>Capcity</span>
+                                            </li>
+                                            <li class="feature-item">
+                                                <span>Freezer</span>
+                                                <span>Capcity</span>
+                                            </li>
+                                            <li class="feature-item">
+                                                <span>Freezer</span>
+                                                <span>Capcity</span>
+                                            </li>
+                                            <li class="feature-item">
+                                                <span>Freezer</span>
+                                                <span>Capcity</span>
+                                            </li>
+                                            <li class="feature-item">
+                                                <span>Freezer</span>
+                                                <span>Capcity</span>
+                                            </li>
+                                            <li class="feature-item">
+                                                <span>Freezer</span>
+                                                <span>Capcity</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-12">
+                                        <div class="blog_content">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur vitae esse consequuntur eius excepturi tempore dolorem laborum accusantium voluptas et. Distinctio autem pariatur eius dolorum qui fugiat, quis odit minus.
+                                            Soluta cum iusto, nisi voluptas, consequatur alias minima necessitatibus molestiae pariatur assumenda numquam repellat placeat provident eos ut perferendis mollitia rem, vero similique. Inventore non, iusto recusandae veritatis earum iste.
+                                            Enim sit sapiente id, necessitatibus deleniti a facere quos odit repellendus, vel sint? Nisi, voluptas, fugit incidunt assumenda exercitationem illo ea eaque, ducimus id doloremque iste earum quisquam necessitatibus maiores?
+                                            Unde quis eos quisquam dolorum? Tempore asperiores, ipsum recusandae non labore explicabo minima odit quae ab quibusdam ad quos illo vel necessitatibus sequi sunt error numquam minus rerum ducimus? Sapiente!
+                                            Molestias molestiae consectetur iusto, fugit incidunt facilis mollitia veniam aut quam recusandae quod eos at totam odit cupiditate laudantium libero id, cum qui in eveniet fugiat, excepturi quis. Exercitationem, distinctio?</p>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, voluptate sint, doloremque cumque esse voluptas, est consequatur earum laborum sed officia soluta vitae beatae laudantium aliquam sit inventore minima. Dignissimos!
+                                            Praesentium perspiciatis accusantium sint natus quasi voluptas. Omnis a consequatur iste. Nisi atque, dicta aspernatur eos quae debitis minima quaerat sit excepturi itaque repellendus odio doloremque corporis. Tempora, labore modi!
+                                            Error quia quasi ad qui placeat alias accusamus quo a vitae enim neque architecto, possimus minus laudantium nisi repellat, mollitia aliquam. Totam ipsum, explicabo animi numquam quibusdam a officia dolorum!
+                                            Maxime magnam quas obcaecati tempore ut inventore, doloremque vero temporibus veritatis similique architecto, mollitia quidem quibusdam distinctio ex quis quae blanditiis, commodi eveniet. Voluptatum aliquam dolores ducimus laudantium aspernatur unde?
+                                            Voluptatem ipsam voluptates soluta distinctio possimus assumenda rerum provident, suscipit veritatis vero? Dignissimos mollitia temporibus alias quaerat dolore, delectus ipsam aliquid accusantium fuga, et aliquam, velit quos? Odit, numquam earum!
+                                            Amet non repellat, voluptas corrupti at vero aperiam recusandae odio natus hic qui corporis eos nobis dignissimos omnis. Expedita, id veniam fuga saepe asperiores aut? Reiciendis est placeat tempora id?</p>
+                                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident illo nemo asperiores fuga nam nostrum ea deleniti dolorum recusandae, obcaecati odio ipsum inventore veritatis laboriosam mollitia debitis, quisquam quos quibusdam?
+                                            Dolore reiciendis atque obcaecati odio nostrum. Modi nulla officiis omnis temporibus reiciendis sapiente exercitationem sed mollitia nobis. Vero aspernatur ut fuga eaque nihil, necessitatibus, alias repellat rem asperiores nesciunt deleniti!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="c_pagination">
+                                    <nav aria-label="Page navigation example">
+                                        <ul class="pagination">
+                                          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                          <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                        </ul>
+                                      </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </main>
+
+                <footer class = "ftr h-100 px-3 pt-4" id = "ftr">
+                    <div class = "container">
+                        <div class = "ftr-cnt text-center text-lg-start row">
+                            <div class = "col-md-6 col-xl-4 px-md-4">
+                                <div class = "ftr-itm mb-3 mb-lg-5">
+                                    <a href = "#" class = "navbar-brand mb-4">
+                                        <img src = "assets/images/site-logo.svg" alt = "aura site logo">
+                                    </a>
+                                    <p class = "text">Aura Products provides and supplies an extensive portfolio of Natural Exfoliation Materials sourced from around the World. Our customers incorporate them into a wide variety of products. </p>
+                                </div>
+                            </div>
+                            
+                            <div class = "col-md-6 col-xl-2 px-md-4">
+                                <div class = "ftr-itm mb-3 mb-lg-5">
+                                    <div class = "ftr-itm-title">
+                                        <h6>Quick Links</h6>
+                                    </div>
+                                    <ul class = "ftr-itm-links">
+                                        <li><a href = "#" class = "ftr-itm-link">home</a></li>
+                                        <li><a href = "#" class = "ftr-itm-link">about us</a></li>
+                                        <li><a href = "#" class = "ftr-itm-link">all categories</a></li>
+                                        <li><a href = "#" class = "ftr-itm-link">our blog</a></li>
+                                        <li><a href = "#" class = "ftr-itm-link">contact us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class = "col-md-6 col-xl-2 px-md-4">
+                                <div class = "ftr-itm mb-3 mb-lg-5">
+                                    <div class = "ftr-itm-title">
+                                        <h6>Our Products</h6>
+                                    </div>
+                                    <ul class = "ftr-itm-links">
+                                        <li><a href = "#" class = "ftr-itm-link">refrigerator</a></li>
+                                        <li><a href = "#" class = "ftr-itm-link">rice cooker</a></li>
+                                        <li><a href = "#" class = "ftr-itm-link">vaccum cleaner</a></li>
+                                        <li><a href = "#" class = "ftr-itm-link">induction</a></li>
+                                        <li><a href = "#" class = "ftr-itm-link">air conditioner</a></li>
+                                        <li><a href = "#" class = "ftr-itm-link">Television</a></li>
+                                        <li><a href = "#" class = "ftr-itm-link">mixer grinder</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class = "col-md-6 col-xl-4 px-md-4 mb-2">
+                                <div class = "ftr-itm">
+                                    <div class = "ftr-itm-title">
+                                        <h6>Get in Touch</h6>
+                                    </div>
+                                    <ul class = "ftr-itm-infos">
+                                        <li>Dillibazar, Kathmandu, Nepal</li>
+                                        <li>customercare@himgirinepal.com</li>
+                                        <li>980-1305532</li>
+                                    </ul>
+                                    <ul class = "ftr-itm-social-links d-flex justify-content-center justify-content-lg-start">
+                                        <li>
+                                            <a href = "#" class = "ftr-itm-social-link"><i class="lni lni-facebook-oval"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href = "#" class = "ftr-itm-social-link"><i class="lni lni-youtube"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href = "#" class = "ftr-itm-social-link"><i class="lni lni-linkedin-original"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href = "#" class = "ftr-itm-social-link"><i class="lni lni-twitter-filled"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href = "#" class = "ftr-itm-social-link"><i class="lni lni-instagram-original"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class = "ftr-cpy-right-text text-center">
+                            <p>All rights reserved. Copyright © 2022 </p>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+        <!-- scripts -->
+        <!-- jquery -->
+        <script src = "assets/js/jquery-3.6.1.js"></script>
+        <!-- bootstrap 5.2 -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+        <!-- owl carousel -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- custom js -->
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>
